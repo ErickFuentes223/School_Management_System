@@ -1,6 +1,5 @@
 <?php
 
-include "../controller/logincontroller.php"
 
 ?>
 
@@ -9,7 +8,7 @@ include "../controller/logincontroller.php"
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Sign up / Login Form</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>

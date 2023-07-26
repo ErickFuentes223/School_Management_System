@@ -1,15 +1,9 @@
-<?php
-
-include "../controller/logincontroller.php"
-
-?>
-
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Sign up / Login Form</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
@@ -26,7 +20,7 @@ include "../controller/logincontroller.php"
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
-				<form method="post" action="../controller/logincontroller.php">
+				<form method="post" action="../controller/loginController.php">
 					<label for="chk" aria-hidden="true">Sign up</label>
 					<input type="text" name="username_su" placeholder="User name" required="">
 					<input type="password" name="pswd_su" placeholder="Password" required="">
@@ -35,7 +29,7 @@ include "../controller/logincontroller.php"
 			</div>
 
 			<div class="login">
-				<form method="post" action="../controller/logincontroller.php">
+				<form method="post" action="../controller/loginController.php">
 					<label for="chk" aria-hidden="true">Login</label>
 					<input type="text" name="username_login" placeholder="Username" required="">
 					<input type="password" name="pswd_login" placeholder="Password" required="">

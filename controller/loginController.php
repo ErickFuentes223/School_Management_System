@@ -2,8 +2,6 @@
 
 include_once "../tools/connection.php";
 
-
-
 session_start();
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -31,14 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     default:
                         echo "Error";
 
-                }
-
-
-            
+                    }
                 }
             }
-            echo "Error verificando datos...";
-
+                header("location:../view/index.php");
         }
     }
    

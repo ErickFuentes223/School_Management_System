@@ -28,12 +28,12 @@ include "../controller/loginController.php"
 			<div class="signup">
 				<form method="post" action="../controller/loginController.php">
 					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="username_su" placeholder="User name" required="">
-					<input type="password" name="pswd_su" placeholder="Password" required="">
+					<input type="text" name="username_login" placeholder="Username" required="">
+					<input type="password" name="pswd_login" placeholder="Password" required="">
 					<button name="btn-access-su">Sign up</button>
 				</form>
 			</div>
-
+<!--
 			<div class="login">
 				<form method="post" action="../controller/loginController.php">
 					<label for="chk" aria-hidden="true">Login</label>
@@ -43,6 +43,9 @@ include "../controller/loginController.php"
 				</form>
 			</div>
 	</div>
+
+	-->
+	
 </body>
 </html>
 <!-- partial -->
