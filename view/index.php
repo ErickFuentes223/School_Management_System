@@ -1,3 +1,9 @@
+<?php
+
+include "../controller/loginController.php"
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -20,21 +26,20 @@
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
-				<form>
+				<form method="post" action="../controller/loginController.php">
 					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="txt" placeholder="User name" required="">
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Sign up</button>
+					<input type="text" name="username_su" placeholder="User name" required="">
+					<input type="password" name="pswd_su" placeholder="Password" required="">
+					<button name="btn-access-su">Sign up</button>
 				</form>
 			</div>
 
 			<div class="login">
-				<form>
+				<form method="post" action="../controller/loginController.php">
 					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Login</button>
+					<input type="text" name="username_login" placeholder="Username" required="">
+					<input type="password" name="pswd_login" placeholder="Password" required="">
+					<button name="btn-access-login">Login</button>
 				</form>
 			</div>
 	</div>
