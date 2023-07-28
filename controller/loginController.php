@@ -27,12 +27,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         header("location:../view/student");
                     break;
                     default:
-                        echo "Error";
-
+                    header("location:../view/index.php");
+                    break;
                     }
                 }
-            }
+            } else{
                 header("location:../view/index.php");
+            }
         }
     }
    

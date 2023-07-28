@@ -9,7 +9,7 @@ include "../controller/loginController.php"
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Sign up / Login Form</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -26,13 +26,14 @@ include "../controller/loginController.php"
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
-				<form method="post" action="../controller/loginController.php">
-					<label for="chk" aria-hidden="true">Sign up</label>
+				<form method="post" action="">
+					<label for="chk" aria-hidden="true">Welcome!</label>
 					<input type="text" name="username_login" placeholder="Username" required="">
 					<input type="password" name="pswd_login" placeholder="Password" required="">
-					<button name="btn-access-su">Sign up</button>
+					<button name="btn-access-su">Login</button>
 				</form>
 			</div>
+
 <!--
 			<div class="login">
 				<form method="post" action="../controller/loginController.php">
@@ -42,9 +43,10 @@ include "../controller/loginController.php"
 					<button name="btn-access-login">Login</button>
 				</form>
 			</div>
+-->
 	</div>
 
-	-->
+	
 	
 </body>
 </html>

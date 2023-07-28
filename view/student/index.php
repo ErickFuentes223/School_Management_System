@@ -22,8 +22,8 @@
 			<div class="signup">
 				<form method="post" action="../controller/loginController.php">
 					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="username_su" placeholder="User name" required="">
-					<input type="password" name="pswd_su" placeholder="Password" required="">
+					<input type="text" name="pswd_login" placeholder="User name" required="">
+					<input type="password" name="pswd_login" placeholder="Password" required="">
 					<button name="btn-access-su">Sign up</button>
 				</form>
 			</div>

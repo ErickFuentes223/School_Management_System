@@ -7,7 +7,7 @@
     $conex = new mysqli($host,$user,$passwd,$bd);
     $conex -> set_charset("utf8");
     if(!$con){
-        die("!MISTAKE! - The connection has not been established");
+        die("MISTAKE! - The connection has not been established");
     }
     return $con;
 
