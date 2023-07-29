@@ -19,7 +19,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="../css/assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../css/assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="../view/css/assets/img/favicon.png">
     <title>
         Grades Management System
     </title>
@@ -88,7 +88,7 @@
                     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Options</h6>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  " href="../teacher/options/SManagement.php">
+                    <a class="nav-link  " href="../pages/profile.html">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
@@ -118,7 +118,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  " href="../teacher/options/Grades.php">
+                    <a class="nav-link  " href="../pages/profile.html">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
@@ -149,7 +149,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link  " href="../teacher/options/AGrades.php">
+                    <a class="nav-link  " href="../pages/profile.html">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
