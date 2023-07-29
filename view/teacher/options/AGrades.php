@@ -26,13 +26,13 @@
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Nucleo Icons -->
-    <link href="../css/assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="../css/assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="/Repositorios/School_Management_System/view/css/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="/Repositorios/School_Management_System/view/css/assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link href="../css/assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="/Repositorios/School_Management_System/view/css/assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
-    <link id="pagestyle" href="../css/assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
+    <link id="pagestyle" href="/Repositorios/School_Management_System/view/css/assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
     <!-- Nepcha Analytics (nepcha.com) -->
     <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
     <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
@@ -46,7 +46,7 @@
                 aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html "
                 target="_blank">
-                <img src="../css/assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+                <img src="/Repositorios/School_Management_System/view/css/assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
                 <span class="ms-1 font-weight-bold">Teachers</span>
             </a>
         </div>
@@ -54,7 +54,7 @@
         <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link  active" href="#">
+                    <a class="nav-link" href="../index.php">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1"
@@ -87,8 +87,10 @@
                 <li class="nav-item mt-3">
                     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Options</h6>
                 </li>
+
+
                 <li class="nav-item">
-                    <a class="nav-link  " href="../pages/profile.html">
+                    <a class="nav-link " href="SManagement.php">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
@@ -117,8 +119,9 @@
                         <span class="nav-link-text ms-1">Students Management</span>
                     </a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link  " href="../pages/profile.html">
+                    <a class="nav-link  " href="Grades.php">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
@@ -149,7 +152,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link  " href="../pages/profile.html">
+                    <a class="nav-link active " href="#">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
@@ -181,7 +184,7 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link  " href="../pages/profile.html">
+                    <a class="nav-link" href="#">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
@@ -212,27 +215,7 @@
                 </li>
             </ul>
         </div>
-        <div class="sidenav-footer mx-3 ">
-            <div class="card card-background shadow-none card-background-mask-secondary" id="sidenavCard">
-                <div class="full-background"
-                    style="background-image: url('../assets/img/curved-images/white-curved.jpg')"></div>
-                <div class="card-body text-start p-3 w-100">
-                    <div
-                        class="icon icon-shape icon-sm bg-white shadow text-center mb-3 d-flex align-items-center justify-content-center border-radius-md">
-                        <i class="ni ni-diamond text-dark text-gradient text-lg top-0" aria-hidden="true"
-                            id="sidenavCardIcon"></i>
-                    </div>
-                    <div class="docs-info">
-                        <h6 class="text-white up mb-0">Need help?</h6>
-                        <p class="text-xs font-weight-bold">Please check our docs</p>
-                        <a href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard"
-                            target="_blank" class="btn btn-white btn-sm w-100 mb-0">Documentation</a>
-                    </div>
-                </div>
-            </div>
-            <a class="btn bg-gradient-primary mt-3 w-100"
-                href="https://www.creative-tim.com/product/soft-ui-dashboard-pro?ref=sidebarfree">Upgrade to pro</a>
-        </div>
+
     </aside>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <!-- Navbar -->
