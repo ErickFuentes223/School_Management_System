@@ -239,11 +239,11 @@ require_once("C:/xampp/htdocs/repositorios/School_Management_System/tools/connec
 
             <?php
 
-$sql = "SELECT `id_student`, `student_name`, `student_surname`, `users`.`username` AS `Uusername`
-FROM `student`
-INNER JOIN `users` ON `student`.`id_user` = `users`.`id_user`;";
-$result = $conex->query($sql);
-$students = $result->fetch_all(MYSQLI_ASSOC);
+                $sql = "SELECT `id_student`, `student_name`, `student_surname`, `users`.`username` AS `Uusername`
+                FROM `student`
+                INNER JOIN `users` ON `student`.`id_user` = `users`.`id_user`;";
+                $result = $conex->query($sql);
+                $students = $result->fetch_all(MYSQLI_ASSOC);
 
             ?>
 
@@ -259,7 +259,7 @@ $students = $result->fetch_all(MYSQLI_ASSOC);
                                 <th>Username</th>
                             </tr>
                         </thead>
-                        <tbody >
+                        <tbody>
                             <?php
           foreach ($students as $row) {
               ?>
@@ -268,6 +268,8 @@ $students = $result->fetch_all(MYSQLI_ASSOC);
                                 <td><?php echo ($row["student_name"]); ?></td>
                                 <td><?php echo ($row["student_surname"]); ?></td>
                                 <td><?php echo ($row["Uusername"]); ?></td>
+                                <td><a href="student_edit.php?id=<?php echo $row["id_student"]; ?>"
+                                        class="btn btn-primary">Editar</a></td>
                             </tr>
                             <?php
           }
