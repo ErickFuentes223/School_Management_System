@@ -19,6 +19,8 @@ $Id_User = $_SESSION["ID_User"];
 $Username = $_SESSION["Username"];
 $Type = $_SESSION["Type"];
 
+require_once("C:/xampp/htdocs/repositorios/School_Management_System/tools/connection.php");
+
 ?>
 
 
@@ -43,7 +45,8 @@ $Type = $_SESSION["Type"];
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link href="/Repositorios/School_Management_System/view/css/assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
-    <link id="pagestyle" href="/Repositorios/School_Management_System/view/css/assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
+    <link id="pagestyle" href="/Repositorios/School_Management_System/view/css/assets/css/soft-ui-dashboard.css?v=1.0.7"
+        rel="stylesheet" />
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
@@ -54,7 +57,8 @@ $Type = $_SESSION["Type"];
                 aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html "
                 target="_blank">
-                <img src="/Repositorios/School_Management_System/view/css/assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+                <img src="/Repositorios/School_Management_System/view/css/assets/img/logo-ct-dark.png"
+                    class="navbar-brand-img h-100" alt="main_logo">
                 <span class="ms-1 font-weight-bold"><?php
                                         echo $Username 
                                         ?></span>
@@ -233,12 +237,56 @@ $Type = $_SESSION["Type"];
 
         <div class="container">
 
+            <?php
+
+$sql = "SELECT `id_student`, `student_name`, `student_surname`, `users`.`username` AS `Uusername`
+FROM `student`
+INNER JOIN `users` ON `student`.`id_user` = `users`.`id_user`;";
+$result = $conex->query($sql);
+$students = $result->fetch_all(MYSQLI_ASSOC);
+
+            ?>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="mt-3">Lista de alumnos</h2>
+                    <table class="table" style="text-align:center;">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Surname</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <?php
+          foreach ($students as $row) {
+              ?>
+                            <tr>
+                                <td><?php echo ($row["id_student"]); ?></td>
+                                <td><?php echo ($row["student_name"]); ?></td>
+                                <td><?php echo ($row["student_surname"]); ?></td>
+                                <td><?php echo ($row["Uusername"]); ?></td>
+                            </tr>
+                            <?php
+          }
+
+          $conex->close();
+          ?>
+                        <tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
 
 
         </div>
 
     </main>
-                              
+
 </body>
 
 </html>
